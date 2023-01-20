@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="{% static 'css/my.css' %}" rel="stylesheet" type="text/css" />
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <table><tr><td>enter username:</td><td><input type="text" id="username"/></td><td><button id="enter">enter</button></td></tr></table>
+  <hr/>
+  <p id="userlabel"></p>
+  <table id="table"></table>
+  <table><tr><td>enter a new zipcode:</td><td><input type="text" id="zipcode"/></td><td><button id="add">add</button></td></tr></table>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
